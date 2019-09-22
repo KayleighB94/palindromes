@@ -4,4 +4,4 @@ node_js:
   - 12
 
 script:
-  ./palindromes/tests
+  ./palindromes/tests/app.spec.js
