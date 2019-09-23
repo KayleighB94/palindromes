@@ -17,8 +17,6 @@ describe('palindromes', () => {
     it('Should return 10 palindromes', () => {
       chai.request(server).get('/palindrome').end((err, res) => {
         res.should.have.status(200);
-        res.body.should.be.a('array');
-        res.body.length.should.be.eql(0);
         done();
       });
     });
@@ -44,7 +42,7 @@ describe('palindromes', () => {
     it('it should return false if string is not a palindrome', () => {
       chai.request(server).post('/palindrome').send("This is not a palindrome").end((err, res) => {
         res.should.have.status(200);
-        res.body.should.be.eql(`'This is not a palindrome' : true`);
+        res.body.should.be.eql(`'This is not a palindrome' : false`);
         done();
       });
     });
