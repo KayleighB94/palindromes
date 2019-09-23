@@ -7,12 +7,17 @@
     "test": "tests"
   },
   "dependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
     "express": "^4.17.1",
-    "joi": "^14.3.1"
+    "joi": "^14.3.1",
+    "mocha": "^6.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "should": "^13.2.3"
+  },
   "scripts": {
-    "test": "tests/index-test.js"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
