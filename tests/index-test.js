@@ -1,4 +1,3 @@
-const expect = require('chai').expect
 const server = require('./palindromes/index');
 
 let chai = require('chai');
