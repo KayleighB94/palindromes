@@ -1,0 +1,27 @@
+{
+  "name": "palindromes",
+  "version": "1.0.0",
+  "description": "This check if the string is a palindrome and if so it saves it to a database",
+  "main": "palindromes/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "joi": "^14.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "testcafe chrome,firefox tests/index-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KayleighB94/palindromes.git"
+  },
+  "author": "Kayleigh Bellis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KayleighB94/palindromes/issues"
+  },
+  "homepage": "https://github.com/KayleighB94/palindromes#readme"
+}
