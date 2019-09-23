@@ -1,5 +1,5 @@
 const expect = require('chai').expect
-const server = require('./palindromes/app');
+const server = require('./palindromes/index');
 
 let chai = require('chai');
 let chaiHttp = require('chai-http');
@@ -7,11 +7,6 @@ let chaiHttp = require('chai-http');
 chai.use(chaiHttp);
 
 describe('palindromes', () => {
-  beforeEach((done) => {
-    Book.remove({}, (err) => { 
-       done();           
-    });        
-  });
 
   describe('/GET palindromes', () => {
     it('Should return 10 palindromes', () => {
