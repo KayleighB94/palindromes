@@ -12,7 +12,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "testcafe chrome,firefox tests/index-test.js"
+    "test": "tests/index-test.js"
   },
   "repository": {
     "type": "git",
