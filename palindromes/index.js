@@ -8,7 +8,7 @@ const server =  http.Server(app)
 
 app.use(express.json());
 
-app.get('/palindrome', (err, res) => {
+app.get('/palindromes', (err, res) => {
     res.status(200);
     console.log(`Requesting the last ten palindromes`)
 
