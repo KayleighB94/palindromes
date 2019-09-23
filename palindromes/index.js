@@ -42,7 +42,7 @@ app.post('/palindromes', (req, res) => {
     // .. Adding to databse
 
     console.log(`Reporting back results to user`)
-    res.send(`'${palindrome}' : ${result}`)
+    res.send(`${result}`)
 
 });
 
