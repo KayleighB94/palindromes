@@ -1,5 +1,5 @@
 const expect = require('chai').expect
-const server = require('../app');
+const server = require('./palindromes/app');
 
 let chai = require('chai');
 let chaiHttp = require('chai-http');
