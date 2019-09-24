@@ -22,12 +22,13 @@ docker-compose up
 
 ## Improvements
 
-* CI pipeline for test, code coverage ect..
-* Tests
 * Postgres connection
 * Docker Containers
+* More tests
 
 ## Release
 
 * Endpoints
 * Calculates if string is a palindrome
+* Tests
+* CI pipeline
