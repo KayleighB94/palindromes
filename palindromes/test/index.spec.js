@@ -1,4 +1,4 @@
-const server = require('../palindromes/index');
+const server = require('../index');
 const expect = require('chai').expect;
 
 const serverurl='http://localhost:3000';

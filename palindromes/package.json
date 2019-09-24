@@ -4,7 +4,7 @@
   "description": "This check if the string is a palindrome and if so it saves it to a database",
   "main": "palindromes/index.js",
   "directories": {
-    "test": "tests"
+    "test": "test"
   },
   "dependencies": {
     "chai": "^4.2.0",
