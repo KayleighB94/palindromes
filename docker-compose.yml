@@ -4,21 +4,18 @@ services:
   palindromes:
     build:
       context: palindromes
-      dockerfile: ./Dockerfile
+      dockerfile: .Dockerfile
     ports:
-      - 3000:3000
-    networks:
-      - palindromes
-    environment:
+      - "3000:3000"
 
   postgres:
     image: postgres:10.4-alpine
-    networks:
-      - palindromes
+    ports:
+      - "5432:5432"
     environment:
-      - POSTGRES_DB=${POSTGRES_DB}
-      - POSTGRES_USER=${POSTGRES_USER}
-      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=palindromes
+      - POSTGRES_USER=palindromes
+      - POSTGRES_PASSWORD=palindromes
 
 
 
