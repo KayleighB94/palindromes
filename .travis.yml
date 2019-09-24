@@ -5,6 +5,4 @@ node_js:
 
 before_install:
   - cd palindromes
-before_script:
-  - cd palindromes
 
